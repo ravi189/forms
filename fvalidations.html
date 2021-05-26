@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <script src="./froms.js"></script>
+</head>
+<body>
+<div class="container">
+   <h1 class="title">Employee Form  </h1>
+   <form action="" id="form" class="form" name="employee-form" onsubmit=" return validate()">
+      <div class="form-control">
+         <label for="">First Name</label>
+         <input type="text" placeholder="first name" name="fname" id="t1">
+         <small id="ferror"></small>
+      </div>
+      <div class="form-control">
+         <label for="">Last Name</label>
+         <input type="text" placeholder="first name" name="fname" id="t2">
+         <small id="lerror"></small>
+      </div>
+      <div class="form-control">
+         <label for="">experience</label>
+         <input type="number" name="fname" id="t3">
+      </div>
+      <div class="form-control">
+         <label for="">salary</label>
+         <select name="" id="t4">
+            <option value="">--select--</option>
+            <option value="20,000">20,000</option>
+            <option value="30,000">30,000</option>
+            <option value="40,000">40,000</option>
+            <option value="50,000">50,000</option>
+         </select>
+         <small id="serror"></small>
+      </div>
+
+      <button type="submit" onclick="formSubmit(event)">submit</button>
+   </form>
+</div> 
+</body>
+</html>
